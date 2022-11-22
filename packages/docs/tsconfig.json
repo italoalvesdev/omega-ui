@@ -1,0 +1,4 @@
+{
+  "extends": "@omega/ts-config/react.json",
+  "include": ["src"]
+}

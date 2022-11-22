@@ -1,0 +1,4 @@
+{
+  "extends": "@omega/ts-config/base.json",
+  "include": ["src"],
+}
