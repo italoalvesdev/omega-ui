@@ -2,8 +2,6 @@ export const colors = {
   white: '#FFF',
   black: '#000',
 
-  test: 'transparent',
-
   'primary-light': '#FFA35E',
   'primary-mid': '#EE8334',
   'primary-dark': '#C76822',
