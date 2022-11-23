@@ -1,4 +1,4 @@
-import { colors } from '@omega/tokens'
+import { colors } from '@omega-ui/tokens'
 import { getContrast } from 'polished'
 
 export function ColorsGrid() {

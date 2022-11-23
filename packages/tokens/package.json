@@ -1,5 +1,5 @@
 {
-  "name": "@omega/tokens",
+  "name": "@omega-ui/tokens",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -14,8 +14,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@omega/eslint-config": "*",
-    "@omega/ts-config": "*",
+    "@omega-ui/eslint-config": "*",
+    "@omega-ui/ts-config": "*",
     "tsup": "^6.5.0",
     "typescript": "^4.9.3"
   }

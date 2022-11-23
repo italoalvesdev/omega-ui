@@ -1,5 +1,5 @@
 import type { Meta, Story, StoryObj } from '@storybook/react'
-import { Button, ButtonProps } from '@omega/react'
+import { Button, ButtonProps } from '@omega-ui/react'
 import { ArrowRight, ArrowLeft, PlusCircle } from 'phosphor-react'
 
 const iconArgTypes = {

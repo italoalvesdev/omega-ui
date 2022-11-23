@@ -6,7 +6,7 @@ import {
   lineHeights,
   radii,
   space,
-} from '@omega/tokens'
+} from '@omega-ui/tokens'
 
 import { createStitches, defaultThemeMap } from '@stitches/react'
 

@@ -1,3 +1,3 @@
 {
-  "extends": "@omega/eslint-config"
+  "extends": "@omega-ui/eslint-config"
 }

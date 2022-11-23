@@ -1,5 +1,5 @@
 {
-  "name": "@omega/eslint-config",
+  "name": "@omega-ui/eslint-config",
   "license": "MIT",
   "private": true,
   "main": "index.js",
