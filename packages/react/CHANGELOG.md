@@ -1,13 +1,7 @@
 # @omega-ui/react
 
-## 1.0.2
+## 1.1.0
 
-### Patch Changes
+### Minor Changes
 
-- Bump all packages
-
-## 1.0.1
-
-### Patch Changes
-
-- Replace forwardRef button component
+- fix: build and types folder not showing
