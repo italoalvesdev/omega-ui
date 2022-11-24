@@ -1,5 +1,11 @@
 # @omega-ui/tokens
 
+## 1.1.2
+
+### Patch Changes
+
+- Bump all packages
+
 ## 1.1.1
 
 ### Patch Changes
