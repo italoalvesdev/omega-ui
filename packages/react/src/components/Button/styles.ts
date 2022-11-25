@@ -51,10 +51,10 @@ export const StyledButton = styled('button', {
     variant: {
       primary: {
         color: '$white',
-        background: '$primary-dark',
+        background: '$primary-mid',
 
         '&:not(:disabled):hover': {
-          background: '$primary-mid',
+          background: '$primary-dark',
         },
       },
 
