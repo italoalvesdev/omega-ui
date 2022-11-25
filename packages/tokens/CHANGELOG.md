@@ -1,5 +1,11 @@
 # @omega-ui/tokens
 
+## 1.1.4
+
+### Patch Changes
+
+- Fix height in production environment
+
 ## 1.1.3
 
 ### Patch Changes

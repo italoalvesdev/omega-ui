@@ -1,5 +1,11 @@
 # @omega-ui/react
 
+## 2.0.4
+
+### Patch Changes
+
+- Fix height in production environment
+
 ## 2.0.3
 
 ### Patch Changes
