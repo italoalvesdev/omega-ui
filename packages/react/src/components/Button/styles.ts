@@ -19,8 +19,7 @@ export const StyledButton = styled('button', {
   all: 'unset',
 
   position: 'relative',
-  borderRadius: '$sm',
-  fontSize: '$sm',
+  borderRadius: '$xs',
   fontWeight: '$bold',
   fontFamily: '$default',
   textAlign: 'center',
@@ -71,12 +70,15 @@ export const StyledButton = styled('button', {
     size: {
       sm: {
         height: 32,
+        fontSize: '$sm',
       },
       md: {
         height: 40,
+        fontSize: '$md',
       },
       lg: {
         height: 48,
+        fontSize: '$lg',
       },
     },
 
