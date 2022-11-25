@@ -1,5 +1,11 @@
 # @omega-ui/react
 
+## 2.0.1
+
+### Patch Changes
+
+- Fix types in button component
+
 ## 1.1.1
 
 ### Patch Changes

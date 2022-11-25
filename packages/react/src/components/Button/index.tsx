@@ -1,15 +1,15 @@
-import {
+import type {
   ComponentProps,
   ElementRef,
   ElementType,
-  forwardRef,
   ForwardRefRenderFunction,
   ReactElement,
 } from 'react'
+import { forwardRef } from 'react'
 
 import { StyledButton, ButtonLabel, ButtonLoading, Spinner } from './styles'
 
-export interface ButtonProps extends ComponentProps<typeof StyledButton> {
+export type ButtonProps = ComponentProps<typeof StyledButton> & {
   as?: ElementType
   leftIcon?: ReactElement
   rightIcon?: ReactElement
