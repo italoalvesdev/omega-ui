@@ -1,5 +1,11 @@
 # @omega-ui/tokens
 
+## 1.1.3
+
+### Patch Changes
+
+- Fix NPM release script
+
 ## 1.1.2
 
 ### Patch Changes
