@@ -1,5 +1,11 @@
 # @omega-ui/react
 
+## 2.0.5
+
+### Patch Changes
+
+- Remove svg default styles in button
+
 ## 2.0.4
 
 ### Patch Changes

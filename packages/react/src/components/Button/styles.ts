@@ -36,11 +36,6 @@ export const StyledButton = styled('button', {
 
   cursor: 'pointer',
 
-  svg: {
-    width: '$4',
-    height: '$4',
-  },
-
   '&:disabled': {
     cursor: 'not-allowed',
     opacity: '50%',
