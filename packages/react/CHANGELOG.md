@@ -1,5 +1,11 @@
 # @omega-ui/react
 
+## 2.0.6
+
+### Patch Changes
+
+- Add new export getCssText for SSR Next.js
+
 ## 2.0.5
 
 ### Patch Changes
