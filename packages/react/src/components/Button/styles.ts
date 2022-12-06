@@ -113,6 +113,7 @@ export const StyledButton = styled('button', {
 
         '&:not(:disabled):hover': {
           background: '$primary-dark',
+          borderColor: '$primary-dark',
           color: '$white',
         },
       },

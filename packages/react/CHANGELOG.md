@@ -1,5 +1,11 @@
 # @omega-ui/react
 
+## 2.0.7
+
+### Patch Changes
+
+- styles: Change button border-color dark tone
+
 ## 2.0.6
 
 ### Patch Changes
