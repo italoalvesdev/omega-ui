@@ -1,5 +1,11 @@
 # @omega-ui/react
 
+## 2.0.9
+
+### Patch Changes
+
+- Update button spinner style and add colors aliases
+
 ## 2.0.8
 
 ### Patch Changes

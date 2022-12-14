@@ -15,12 +15,52 @@ export const ButtonLabel = styled('span', {
   },
 })
 
+export const Spinner = styled('span', {
+  $$baseSize: '16px',
+  $$borderWidth: '2px',
+  $$baseColor: '$colors$white',
+
+  width: '$$baseSize',
+  height: '$$baseSize',
+
+  display: 'block',
+  position: 'relative',
+  boxSizing: 'border-box',
+
+  '&::before, &::after': {
+    content: '',
+    boxSizing: 'inherit',
+    position: 'absolute',
+    top: '0px',
+    left: '0px',
+    width: '100%',
+    height: '100%',
+
+    borderWidth: '$$borderWidth',
+    borderStyle: 'solid',
+    borderRadius: '$full',
+    borderTopColor: '$$baseColor',
+    borderLeftColor: '$$baseColor',
+    borderBottomColor: '$$baseColor',
+    borderRightColor: 'transparent',
+
+    animation: `0.6s linear 0s infinite normal none ${spinning}`,
+  },
+
+  '&::after': {
+    borderTopColor: 'transparent',
+    borderBottomColor: 'transparent',
+    borderLeftColor: 'transparent',
+    borderRightColor: '$$baseColor',
+    opacity: 0.5,
+  },
+})
+
 export const StyledButton = styled('button', {
   all: 'unset',
 
   position: 'relative',
   borderRadius: '$xs',
-  fontWeight: '$bold',
   fontFamily: '$default',
   textAlign: 'center',
   minWidth: 120,
@@ -77,6 +117,27 @@ export const StyledButton = styled('button', {
       },
     },
 
+    fontWeight: {
+      regular: {
+        fontWeight: '$regular',
+      },
+      medium: {
+        fontWeight: '$medium',
+      },
+      bold: {
+        fontWeight: '$bold',
+      },
+    },
+
+    textColor: {
+      white: {
+        color: '$white',
+      },
+      black: {
+        color: '$black',
+      },
+    },
+
     outlined: {
       true: {
         transitionProperty:
@@ -111,6 +172,10 @@ export const StyledButton = styled('button', {
         color: '$primary-mid',
         border: '2px solid $primary-mid',
 
+        [`${Spinner}`]: {
+          $$baseColor: '$primary-mid',
+        },
+
         '&:not(:disabled):hover': {
           background: '$primary-dark',
           borderColor: '$primary-dark',
@@ -126,9 +191,31 @@ export const StyledButton = styled('button', {
         color: '$secondary-dark',
         border: '2px solid $secondary-dark',
 
+        [`${Spinner}`]: {
+          $$baseColor: '$secondary-dark',
+        },
+
         '&:not(:disabled):hover': {
           background: '$secondary-dark',
           color: '$white',
+        },
+      },
+    },
+    {
+      size: 'sm',
+      loading: true,
+      css: {
+        [`& ${Spinner}`]: {
+          $$baseSize: '14px',
+        },
+      },
+    },
+    {
+      size: 'lg',
+      loading: true,
+      css: {
+        [`& ${Spinner}`]: {
+          $$baseSize: '18px',
         },
       },
     },
@@ -137,6 +224,8 @@ export const StyledButton = styled('button', {
   defaultVariants: {
     variant: 'primary',
     size: 'md',
+    fontWeight: 'medium',
+    textColor: 'black',
   },
 })
 
@@ -150,44 +239,4 @@ export const ButtonLoading = styled('span', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-})
-
-export const Spinner = styled('span', {
-  width: '16px',
-  height: '16px',
-
-  display: 'block',
-  position: 'relative',
-  boxSizing: 'border-box',
-
-  $$borderWidth: '2px',
-  $$baseColor: '$colors$white',
-
-  '&::before, &::after': {
-    content: '',
-    boxSizing: 'inherit',
-    position: 'absolute',
-    top: '0px',
-    left: '0px',
-    width: '100%',
-    height: '100%',
-
-    borderWidth: '$$borderWidth',
-    borderStyle: 'solid',
-    borderRadius: '$full',
-    borderTopColor: '$$baseColor',
-    borderLeftColor: '$$baseColor',
-    borderBottomColor: '$$baseColor',
-    borderRightColor: 'transparent',
-
-    animation: `0.6s linear 0s infinite normal none ${spinning}`,
-  },
-
-  '&::after': {
-    borderTopColor: 'transparent',
-    borderBottomColor: 'transparent',
-    borderLeftColor: 'transparent',
-    borderRightColor: '$$baseColor',
-    opacity: 0.5,
-  },
 })

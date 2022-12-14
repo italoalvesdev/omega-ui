@@ -1,5 +1,11 @@
 # @omega-ui/tokens
 
+## 1.2.0
+
+### Minor Changes
+
+- Update button spinner style and add colors aliases
+
 ## 1.1.4
 
 ### Patch Changes

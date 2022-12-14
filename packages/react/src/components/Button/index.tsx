@@ -14,13 +14,22 @@ export type ButtonProps = ComponentProps<typeof StyledButton> & {
   leftIcon?: ReactElement
   rightIcon?: ReactElement
   loading?: boolean
+  spinnerColor?: 'black' | 'white'
 }
 
 const ButtonBase: ForwardRefRenderFunction<
   ElementRef<typeof StyledButton>,
   ButtonProps
 > = (
-  { children, leftIcon, rightIcon, loading, disabled, ...props },
+  {
+    children,
+    leftIcon,
+    rightIcon,
+    spinnerColor = 'white',
+    loading,
+    disabled,
+    ...props
+  },
   forwardedRef,
 ) => {
   return (
@@ -37,7 +46,7 @@ const ButtonBase: ForwardRefRenderFunction<
       </ButtonLabel>
       {loading && (
         <ButtonLoading>
-          <Spinner />
+          <Spinner css={{ '---baseColor': spinnerColor }} />
         </ButtonLoading>
       )}
     </StyledButton>

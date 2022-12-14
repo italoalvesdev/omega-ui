@@ -25,8 +25,11 @@ export default {
     children: 'Send',
     variant: 'primary',
     size: 'md',
-    disabled: false,
+    fontWeight: 'medium',
+    textColor: 'white',
+    spinnerColor: 'white',
     outlined: false,
+    disabled: false,
     full: false,
     loading: false,
   },
@@ -43,12 +46,30 @@ export default {
         type: 'inline-radio',
       },
     },
-    disabled: {
+    fontWeight: {
+      options: ['regular', 'medium', 'bold'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    textColor: {
+      options: ['black', 'white'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    spinnerColor: {
+      options: ['black', 'white'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    outlined: {
       control: {
         type: 'boolean',
       },
     },
-    outlined: {
+    disabled: {
       control: {
         type: 'boolean',
       },
@@ -83,6 +104,12 @@ export const Secondary: StoryObj<ButtonProps> = {
 export const Small: StoryObj<ButtonProps> = {
   args: {
     size: 'sm',
+  },
+}
+
+export const Loading: StoryObj<ButtonProps> = {
+  args: {
+    loading: true,
   },
 }
 

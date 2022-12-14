@@ -1,4 +1,4 @@
-export const colors = {
+export const baseColors = {
   white: '#FFF',
   black: '#000',
 
@@ -11,15 +11,16 @@ export const colors = {
   'secondary-dark': '#232537',
 
   grey50: '#D9D9D9',
-  grey100: '#E1E1E6',
-  grey200: '#A9A9B2',
+  grey100: '#E0E0E0',
+  grey200: '#E1E1E6',
+  // grey300: '#A9A9B2',
   grey400: '#7C7C8A',
   grey500: '#505059',
-  grey600: '#323238',
-  grey700: '#29292E',
+  // grey600: '#323238',
+  // grey700: '#29292E',
   grey800: '#202024',
-  grey900: '#121214',
-  grey950: '#09090A',
+  // grey900: '#121214',
+  // grey950: '#09090A',
 
   white500: '#EFEFEF',
   white700: '#FCFCFC',
@@ -40,3 +41,14 @@ export const colors = {
 
   'cyan-base': '#3AA2A9',
 }
+
+const aliases = {
+  'text-title': baseColors.grey200,
+  'text-base': baseColors.grey50,
+  placeholder: baseColors.grey400,
+  'color-background-light': baseColors.grey100,
+  'color-background-dark': baseColors.grey500,
+  'dark-text': baseColors.grey800,
+}
+
+export const colors = { ...baseColors, ...aliases }
