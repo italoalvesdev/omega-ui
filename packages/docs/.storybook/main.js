@@ -18,7 +18,7 @@ module.exports = {
   },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/omega-test/'
+      config.base = '/omega-ui/'
     }
 
     return config
