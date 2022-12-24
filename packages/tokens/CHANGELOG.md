@@ -1,5 +1,11 @@
 # @omega-ui/tokens
 
+## 1.2.1
+
+### Patch Changes
+
+- Add text input component and add family and weight variant in heading and text component
+
 ## 1.2.0
 
 ### Minor Changes
