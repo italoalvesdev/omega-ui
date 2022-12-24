@@ -6,8 +6,6 @@ export default {
   component: Heading,
   args: {
     size: 'md',
-    family: 'regular',
-    color: 'black',
     children: 'Custom title',
   },
   argTypes: {
@@ -17,28 +15,14 @@ export default {
         type: 'inline-radio',
       },
     },
-
-    family: {
-      options: ['regular', 'title'],
-
-      control: {
-        type: 'select',
-        labels: {
-          regular: '$regular',
-          title: '$secondary',
-        },
-      },
-    },
-
     color: {
-      options: ['white', 'black'],
-
+      options: ['$white', '$black'],
+      mapping: {
+        $white: 'white',
+        $black: 'black',
+      },
       control: {
         type: 'select',
-        labels: {
-          white: '$white',
-          black: '$black',
-        },
       },
     },
   },
