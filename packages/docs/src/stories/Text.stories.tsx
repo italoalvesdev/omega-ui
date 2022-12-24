@@ -6,6 +6,9 @@ export default {
   component: Text,
   args: {
     size: 'md',
+    family: 'regular',
+    color: 'black',
+    weight: 'regular',
     children:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo quos perspiciatis minus error? Eaque, laboriosam impedit natus autem quaerat labore minus! Nisi, saepe error! Aliquid voluptatum corrupti voluptates libero sit?',
   },
@@ -31,13 +34,34 @@ export default {
       },
     },
     color: {
-      options: ['$white', '$black'],
-      mapping: {
-        $white: 'white',
-        $black: 'black',
-      },
+      options: ['white', 'black'],
       control: {
         type: 'select',
+        labels: {
+          white: '$white',
+          black: '$black',
+        },
+      },
+    },
+    weight: {
+      options: ['regular', 'medium', 'bold'],
+      control: {
+        type: 'select',
+        labels: {
+          regular: '$regular',
+          medium: '$medium',
+          bold: '$bold',
+        },
+      },
+    },
+    family: {
+      options: ['regular', 'title'],
+      control: {
+        type: 'select',
+        labels: {
+          regular: '$regular',
+          title: '$secondary',
+        },
       },
     },
   },

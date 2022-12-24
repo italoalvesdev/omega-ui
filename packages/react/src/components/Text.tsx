@@ -2,7 +2,6 @@ import type { ComponentProps, ElementType } from 'react'
 import { styled } from '../styles'
 
 export const Text = styled('p', {
-  fontFamily: '$default',
   lineHeight: '$base',
   margin: 0,
 
@@ -25,6 +24,27 @@ export const Text = styled('p', {
       '9xl': { fontSize: '$9xl' },
     },
 
+    family: {
+      regular: {
+        fontFamily: '$default',
+      },
+      secondary: {
+        fontFamily: '$title',
+      },
+    },
+
+    weight: {
+      regular: {
+        fontWeight: '$regular',
+      },
+      medium: {
+        fontWeight: '$medium',
+      },
+      bold: {
+        fontWeight: '$bold',
+      },
+    },
+
     color: {
       white: {
         color: '$white',
@@ -37,10 +57,12 @@ export const Text = styled('p', {
 
   defaultVariants: {
     size: 'md',
+    family: 'regular',
+    weight: 'regular',
     color: 'white',
   },
 })
 
-export interface TextProps extends ComponentProps<typeof Text> {
+export type TextProps = ComponentProps<typeof Text> & {
   as?: ElementType
 }

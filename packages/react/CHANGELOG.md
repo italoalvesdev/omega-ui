@@ -1,5 +1,11 @@
 # @omega-ui/react
 
+## 2.1.0
+
+### Minor Changes
+
+- Add text input component and add family and weight variant in heading and text component
+
 ## 2.0.9
 
 ### Patch Changes
